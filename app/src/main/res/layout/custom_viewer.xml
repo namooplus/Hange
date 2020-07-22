@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	
+	<android.support.v7.widget.Toolbar
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/custom_toolbar_actionbar"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:minHeight="?attr/actionBarSize"
+		android:background="?attr/colorPrimary"
+		app:theme="@style/AppTheme"
+		app:popupTheme="@style/AppTheme.Light"/>
+
+	<ProgressBar
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_height="4dp"
+		android:layout_width="match_parent"
+		android:progressDrawable="@drawable/custom_progress"
+		android:id="@+id/custom_web_progress"/>
+
+	<WebView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:id="@+id/custom_webView"
+		android:layout_weight="1"/>
+	
+	<com.google.android.gms.ads.AdView
+		xmlns:ads="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/adView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		ads:adUnitId="ca-app-pub-8836936338107765/9977278332"
+		ads:adSize="SMART_BANNER"/>
+
+</LinearLayout>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hange</string>
+	<string name="change_log">v 2.0.0 [All new]\n- New : UI\n- Fixed : lag during loading html\n- Removed : line number indicator\n- Removed : Korean Translation</string>
+	<string name="app_info">Application Name : Hange\nApplication Version : v 2.0.0</string>
+	<string name="dev_info">namoo+ (나무플러스)\n\n- Email : jklhjj@naver.com\n- Blog : http://namooplus.tistory.com</string>
+	
+</resources>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+	<item
+		android:id="@+id/pop_search"
+		android:title="Search"
+		android:icon="@drawable/nd_search"
+		app:showAsAction="always"/>
+	
+	<item
+		android:id="@+id/pop_more"
+		android:title="More"
+		android:icon="@drawable/nd_more"
+		app:showAsAction="always"/>
+    
+</menu>

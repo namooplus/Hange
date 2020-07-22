@@ -1,0 +1,24 @@
+<resources>
+    <!-- ********************** -->
+    <!-- Material Drawer Dimens -->
+    <!-- ********************** -->
+    <!-- Definition for the Drawer Slider margin right -->
+    <dimen name="material_drawer_margin">56dp</dimen>
+    <!-- General padding value -->
+    <dimen name="material_drawer_padding">8dp</dimen>
+    <!-- General vertical padding values -->
+    <dimen name="material_drawer_vertical_padding">16dp</dimen>
+    <!-- General icon margin above and under the icons -->
+    <dimen name="material_drawer_icon_margin">12dp</dimen>
+    <!-- Definition for the primary item -->
+    <dimen name="material_drawer_primary">48dp</dimen>
+    <dimen name="material_drawer_primary_icon">24dp</dimen>
+    <dimen name="material_drawer_primary_text">14sp</dimen>
+    <!-- Definition for the secondary item -->
+    <dimen name="material_drawer_secondary">48dp</dimen>
+    <dimen name="material_drawer_secondary_icon">24dp</dimen>
+    <dimen name="material_drawer_secondary_text">14sp</dimen>
+
+    <!-- Toolbar Padding -->
+    <dimen name="tool_bar_top_padding">0dp</dimen>
+</resources>

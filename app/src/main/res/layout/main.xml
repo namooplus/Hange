@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:background="#DDDDDD">
+
+	<android.support.v7.widget.Toolbar
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/toolbar_actionbar"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:minHeight="?attr/actionBarSize"
+		android:background="?attr/colorPrimary"
+		app:theme="@style/AppTheme"
+		app:popupTheme="@style/AppTheme.Light"/>
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_weight="1">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/tab_viewer">
+
+			<ProgressBar
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_height="4dp"
+				android:layout_width="match_parent"
+				android:progressDrawable="@drawable/custom_progress"
+				android:id="@+id/web_progress"/>
+
+			<WebView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:id="@+id/webView"/>
+
+		</LinearLayout>
+
+		<ScrollView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:id="@+id/tab_editor"
+			android:visibility="gone">
+
+			<EditText
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:background="#00000000"
+				android:padding="10dp"
+				android:hint="HTML will be seen here"
+				android:textSize="16sp"
+				android:textColor="#000000"
+				android:textColorHint="#767676"
+				android:id="@+id/editor"/>
+
+		</ScrollView>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/tab_info"
+			android:padding="20dp"
+			android:visibility="gone">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Title"
+				android:textColor="#4892B8"
+				android:textSize="25sp"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginTop="10dp"
+				android:id="@+id/web_title"
+				android:textSize="17sp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Url"
+				android:textColor="#4892B8"
+				android:textSize="25sp"
+				android:textStyle="bold"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginTop="10dp"
+				android:id="@+id/web_url"
+				android:textSize="17sp"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Icon"
+				android:textColor="#4892B8"
+				android:textSize="25sp"
+				android:textStyle="bold"
+				android:layout_marginTop="10dp"/>
+
+			<ImageView
+				android:layout_height="70dp"
+				android:layout_width="70dp"
+				android:src="@android:drawable/ic_delete"
+				android:layout_marginTop="10dp"
+				android:id="@+id/web_icon"/>
+
+		</LinearLayout>
+
+		<RelativeLayout
+			android:id="@+id/hange_layout"
+			android:layout_height="60dp"
+			android:layout_width="60dp"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_margin="20dp">
+
+			<Button
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:background="@drawable/round"
+				android:onClick="hange"/>
+
+			<ImageView
+				android:layout_height="40dp"
+				android:layout_width="40dp"
+				android:src="@drawable/hange"
+				android:layout_margin="10dp"
+				android:elevation="5dp"/>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+	
+	<com.google.android.gms.ads.AdView
+		xmlns:ads="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/adView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		ads:adUnitId="ca-app-pub-8836936338107765/9977278332"
+		ads:adSize="SMART_BANNER"/>
+
+</LinearLayout>
+
